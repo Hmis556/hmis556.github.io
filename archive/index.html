@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    (function(){
+        var saved = localStorage.getItem('githubboke-theme-dark-mode');
+        var prefers = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'true' || (saved === null && prefers)) {
+            document.documentElement.className = 'dark-mode';
+            document.documentElement.style.colorScheme = 'dark';
+        }
+    })();
+    </script>
+    <title>SEC@Hmis - SEC@Hmis</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    
+</head>
+<body class="dark-mode">
+    <header class="site-header fixed">
+    <div class="container header-inner">
+        <a href="/" class="site-brand">SEC@Hmis</a>
+        <button class="hamburger" id="hamburgerBtn" onclick="toggleMobileNav()" aria-label="菜单">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="siteNav">
+            <a href="/">首页</a>
+            <a href="/archive">归档</a>
+            <a href="/tags">标签</a>
+            
+            <button class="theme-dark-toggle" onclick="toggleThemeDarkMode()" title="切换深色模式">
+                <span id="theme-dark-icon">🌙</span>
+            </button>
+        </nav>
+    </div>
+</header>
+    <main class="container">
+        
+<section class="archive">
+    <h1 class="page-title">归档</h1>
+    
+    <h2 class="archive-year">2026</h2>
+    
+    <h3 class="archive-month">07 月</h3>
+    <ul class="archive-list">
+        
+        <li>
+            <time>2026-07-27</time>
+            <a href="/untitled">test</a>
+        </li>
+        
+    </ul>
+    
+    
+</section>
+
+    </main>
+    <footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2026 SEC@Hmis. Powered by githubboke.</p>
+    </div>
+</footer>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
